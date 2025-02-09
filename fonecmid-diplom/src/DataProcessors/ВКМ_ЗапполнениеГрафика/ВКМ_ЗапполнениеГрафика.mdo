@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42c90e6b-d9af-446a-bf6f-ed7c3c8b86e3">
+  <producedTypes>
+    <objectType typeId="5adbe170-07e5-43e8-aa8b-9231ff068a29" valueTypeId="0884b852-a505-44e8-bbb4-1b890abfd97d"/>
+    <managerType typeId="0cc56a73-dbb0-484e-9dc2-e37047289f8b" valueTypeId="50913ae0-2e55-4697-8145-b8df9722651d"/>
+  </producedTypes>
+  <name>ВКМ_ЗапполнениеГрафика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение графика</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_ЗапполнениеГрафика.Form.Форма</defaultForm>
+  <attributes uuid="d340f488-a92c-4be8-9dcf-efa2325469ed">
+    <name>Период</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ab2a7f95-a180-49b7-8a63-7ddb225c9e92">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="248fb79f-530d-4334-ac83-eedc2652d3be">
+    <name>ВыходныеДни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходные дни</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="a11cca3f-30a9-466d-865a-01f2c7442d43">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

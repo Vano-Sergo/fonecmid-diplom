@@ -2,7 +2,7 @@
 <Rights xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://v8.1c.ru/8.2/roles" xsi:type="Rights">
 	<setForNewObjects>false</setForNewObjects>
 	<setForAttributesByDefault>true</setForAttributesByDefault>
-	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
+	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
 		<name>Catalog.ДополнительныеОтчетыИОбработки.TabularSection.Команды.Attribute.ПоказыватьОповещение</name>
 		<right>
@@ -958,7 +958,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СведенияОПользователях.Resource.УдалитьИспользованныеПароли</name>
+		<name>InformationRegister.СведенияОПользователях.Resource.ИспользованныеПароли</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1871,7 +1871,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.СведенияОПользователях.Resource.УдалитьДатаНачалаИспользованияПароля</name>
+		<name>InformationRegister.СведенияОПользователях.Resource.ДатаНачалаИспользованияПароля</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -2036,7 +2036,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.ТелефонСДобавочнымНомером</name>
+		<name>Catalog.ВидыКонтактнойИнформации.Attribute.ТелефонCДобавочнымНомером</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -2418,6 +2418,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>HTTPService.ТелеграмБот.URLTemplate.Send.Method.POSTSend</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -3604,7 +3611,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ОтправленныеСерверныеОповещения.Attribute.ДатаЗаписиВСистемуВзаимодействияМиллисекунды</name>
+		<name>InformationRegister.ОтправленныеСерверныеОповещения.Attribute.ЗаписаноВСистемуВзаимодействия</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -3803,6 +3810,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ.Dimension.Очередь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.УдаляемыеОбъекты.Resource.ВремяБлокировки</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -4217,6 +4235,53 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВКМ_ИдентификаторГруппыДляОповещения</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -5361,7 +5426,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВнешниеПользователи.Attribute.УдалитьСвойстваПользователяИБ</name>
+		<name>Catalog.ВнешниеПользователи.Attribute.СвойстваПользователяИБ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -6095,6 +6160,53 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ВКМ_ТокенУправленияТелеграмБотом</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -8496,6 +8608,13 @@
 		</right>
 	</object>
 	<object>
+		<name>WebService.InterfaceVersion.Operation.GetVersions</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрофилиГруппДоступа.TabularSection.ЗначенияДоступа.Attribute.ВключаяНижестоящие</name>
 		<right>
 			<name>View</name>
@@ -10784,7 +10903,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВидыКонтактнойИнформации.Attribute.УдалитьПроверятьПоФИАС</name>
+		<name>Catalog.ВидыКонтактнойИнформации.Attribute.ПроверятьПоФИАС</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -14326,6 +14445,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ДлительныеОперации.Attribute.ИдентификаторПроцесса</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ОрганизацииПрисоединенныеФайлы.Attribute.ФайлХранилище</name>
 		<right>
 			<name>View</name>
@@ -16130,6 +16260,13 @@
 		</right>
 	</object>
 	<object>
+		<name>HTTPService.ТелеграмБот.URLTemplate.Ping.Method.GETPing</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.НаборыГруппДоступа.TabularSection.Группы</name>
 		<right>
 			<name>View</name>
@@ -17122,6 +17259,10 @@
 	<object>
 		<name>Configuration.УправлениеITФирмой</name>
 		<right>
+			<name>ExternalConnection</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
@@ -17978,6 +18119,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ВидыКонтактнойИнформации.Attribute.МожноИзменятьСпособРедактирования</name>
 		<right>
 			<name>View</name>
@@ -18693,7 +18845,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи.Attribute.УдалитьСвойстваПользователяИБ</name>
+		<name>Catalog.Пользователи.Attribute.СвойстваПользователяИБ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -20868,6 +21020,33 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВКМ_УведомленияТелеграмБоту</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

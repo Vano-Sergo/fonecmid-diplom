@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="923c9f7e-a51f-4749-bb43-74f3ef28d501">
+  <name>ВКМ_ЗарплатыГрафики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Зарплаты графики</value>
+  </synonym>
+</mdclass:Role>
